@@ -4,7 +4,7 @@ app.use(express.static(__dirname + '/public'));
 app.set('view engine', 'ejs');
 
 app.get("/", (request, response) => {
-    res.render('index');
+    response.render('index');
     next();
 });
 
